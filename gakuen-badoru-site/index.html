@@ -1,0 +1,710 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#effaff" />
+        <meta
+            name="description"
+            content="『学園バドる！』は、個性豊かな部活少女たちが固有能力と必殺技で戦う2Dアーケードライク・バドミントンゲーム。PC (Windows) / Steam、Q4 2026発売予定。"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:title"
+            content="学園バドる！ | Shuttle Hearts - Academy Smash"
+        />
+        <meta
+            property="og:description"
+            content="必殺技が飛び交う、ハチャメチャ学園バドミントン！"
+        />
+        <meta property="og:image" content="assets/keyart/main_jp.webp" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <title>学園バドる！ | Shuttle Hearts - Academy Smash</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <a class="skip-link" href="#main" data-i18n="a11y.skip">本文へ移動</a>
+
+        <header class="site-header" id="top">
+            <div class="header-inner">
+                <a class="brand" href="#top">
+                    <span class="brand-prefix" data-i18n="brand.prefix">のだるき</span><span class="brand-suffix">Games</span>
+                </a>
+
+                <button
+                    class="menu-button"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="site-nav"
+                >
+                    <span></span><span></span><span></span>
+                    <span class="sr-only" data-i18n="a11y.menu">メニュー</span>
+                </button>
+
+                <nav
+                    class="site-nav"
+                    id="site-nav"
+                    aria-label="Primary navigation"
+                >
+                    <a href="#about" data-i18n="nav.about">ゲーム紹介</a>
+                    <a href="#features" data-i18n="nav.features">特徴</a>
+                    <a href="#trailer" data-i18n="nav.trailer">トレーラー</a>
+                    <a href="#characters" data-i18n="nav.characters"
+                        >キャラクター</a
+                    >
+                    <a href="#screenshots" data-i18n="nav.screenshots"
+                        >スクリーンショット</a
+                    >
+                    <a href="#info" data-i18n="nav.info">ゲーム情報</a>
+                </nav>
+
+                <div class="header-actions">
+                    <div class="lang-switch" role="group" aria-label="Language">
+                        <button
+                            type="button"
+                            data-lang="ja"
+                            class="active"
+                            aria-pressed="true"
+                        >
+                            日本語
+                        </button>
+                        <span aria-hidden="true">/</span>
+                        <button
+                            type="button"
+                            data-lang="en"
+                            aria-pressed="false"
+                        >
+                            English
+                        </button>
+                    </div>
+                    <a
+                        class="button button-small steam-link config-link"
+                        data-config-link="steamUrl"
+                        href="#"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <span aria-hidden="true">♡</span
+                        ><span data-i18n="cta.wishlistShort"
+                            >ウィッシュリスト</span
+                        >
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main id="main">
+            <section class="hero" aria-labelledby="hero-title">
+                <div class="hero-bg hero-bg-left" aria-hidden="true"></div>
+                <div class="hero-bg hero-bg-right" aria-hidden="true"></div>
+                <div class="hero-inner">
+                    <picture class="hero-art">
+                        <source
+                            media="(max-width: 680px)"
+                            data-src-ja="assets/keyart/mobile_jp.webp"
+                            data-src-en="assets/keyart/mobile_en.webp"
+                            srcset="assets/keyart/mobile_jp.webp"
+                        />
+                        <img
+                            src="assets/keyart/main_jp.webp"
+                            data-src-ja="assets/keyart/main_jp.webp"
+                            data-src-en="assets/keyart/main_en.webp"
+                            alt="学園バドる！ キービジュアル"
+                            data-alt-ja="学園バドる！ キービジュアル"
+                            data-alt-en="Shuttle Hearts - Academy Smash key art"
+                            fetchpriority="high"
+                        />
+                    </picture>
+
+                    <div class="hero-copy reveal">
+                        <p class="eyebrow">2D ARCADE-STYLE BADMINTON</p>
+                        <h1 id="hero-title">
+                            <span data-i18n="hero.line1"
+                                >必殺技が飛び交う、</span
+                            ><br />
+                            <span class="accent" data-i18n="hero.line2"
+                                >ハチャメチャ学園バドミントン！</span
+                            >
+                        </h1>
+                        <p class="hero-lead" data-i18n="hero.lead">
+                            バドミントン部じゃない少女たちが、部活らしい能力と必殺技を引っ提げてコートに参戦！
+                        </p>
+                        <div class="hero-buttons">
+                            <a
+                                class="button button-primary config-link"
+                                data-config-link="steamUrl"
+                                href="#"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                <span aria-hidden="true">♡</span
+                                ><span data-i18n="cta.wishlist"
+                                    >Steamでウィッシュリスト</span
+                                >
+                            </a>
+                            <a class="button button-secondary" href="#trailer">
+                                <span aria-hidden="true">▶</span
+                                ><span data-i18n="cta.trailer"
+                                    >Trailerを見る</span
+                                >
+                            </a>
+                        </div>
+                        <p
+                            class="config-note steam-note"
+                            data-i18n="cta.steamPending"
+                        >
+                            Steamストアページは準備中です
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="quick-info" aria-label="Game summary">
+                <div class="quick-info-inner">
+                    <div><span>PLATFORM</span><strong>PC / STEAM</strong></div>
+                    <div>
+                        <span data-i18n="quick.release">発売予定</span
+                        ><strong data-i18n="quick.releaseValue"
+                            >2026年第4四半期</strong
+                        >
+                    </div>
+                    <div>
+                        <span data-i18n="quick.players">プレイ人数</span
+                        ><strong>1–2</strong>
+                    </div>
+                    <div>
+                        <span>LANGUAGES</span><strong>日本語 / ENGLISH</strong>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section-about" id="about">
+                <div class="section-inner split-grid">
+                    <div class="about-copy reveal">
+                        <div class="section-heading left">
+                            <p class="section-kicker">ABOUT THE GAME</p>
+                            <h2 data-i18n="about.title">
+                                バドミントン部じゃない！？<br />部活少女たちの本気バトル！
+                            </h2>
+                        </div>
+                        <p data-i18n="about.p1">
+                            『学園バドる！』は、帰宅部、陸上部、空手部、美術部、調理部、オカ研部など、個性豊かな少女たちが戦う2Dアーケードライク・バドミントンゲーム。
+                        </p>
+                        <p data-i18n="about.p2">
+                            ロブ、クリア、ドロップ、ドライブ、スマッシュを使い分けてラリーを制し、ゲージが溜まったらキャラクター固有の「SPショット」と「SPスキル」を発動！
+                        </p>
+                        <p data-i18n="about.p3">
+                            90年代アーケードゲームを意識した、テンポの良いスピーディーなゲームプレイを楽しめます。
+                        </p>
+                    </div>
+                    <figure class="screenshot-frame about-shot reveal">
+                        <img
+                            src="assets/screenshots/01_match1_jp.webp"
+                            data-src-ja="assets/screenshots/01_match1_jp.webp"
+                            data-src-en="assets/screenshots/01_match1_en.webp"
+                            alt="試合画面"
+                            data-alt-ja="試合画面"
+                            data-alt-en="Match gameplay"
+                            loading="lazy"
+                        />
+                        <figcaption data-i18n="about.caption">
+                            一瞬の判断でラリーを制せ！
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section class="section section-features" id="features">
+                <div class="section-inner">
+                    <div class="section-heading reveal">
+                        <p class="section-kicker">FEATURES</p>
+                        <h2 data-i18n="features.title">
+                            学園バドる！のここがハチャメチャ
+                        </h2>
+                        <p data-i18n="features.lead">
+                            シンプルに遊べて、キャラクターごとに戦い方がガラッと変わる。
+                        </p>
+                    </div>
+
+                    <div class="feature-grid">
+                        <article class="feature-card reveal">
+                            <div class="feature-number">01</div>
+                            <div class="feature-visual feature-character">
+                                <img
+                                    src="assets/characters/athletics.webp"
+                                    alt="陸上部"
+                                    loading="lazy"
+                                />
+                                <img
+                                    src="assets/characters/art.webp"
+                                    alt="美術部"
+                                    loading="lazy"
+                                />
+                            </div>
+                            <div class="feature-content">
+                                <p class="feature-tag">UNIQUE CHARACTERS</p>
+                                <h3 data-i18n="features.characters.title">
+                                    個性豊かな部活少女たち
+                                </h3>
+                                <p data-i18n="features.characters.text">
+                                    帰宅部、陸上部、美術部、空手部……。部活をモチーフにした固有能力で、普通じゃないバドミントン勝負！
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="feature-card reveal">
+                            <div class="feature-number">02</div>
+                            <div class="feature-visual feature-shot">
+                                <img
+                                    src="assets/screenshots/02_spshot1_1_jp.webp"
+                                    data-src-ja="assets/screenshots/02_spshot1_1_jp.webp"
+                                    data-src-en="assets/screenshots/02_spshot1_1_en.webp"
+                                    alt="SPショット"
+                                    data-alt-ja="SPショット演出"
+                                    data-alt-en="SP Shot special move"
+                                    loading="lazy"
+                                />
+                            </div>
+                            <div class="feature-content">
+                                <p class="feature-tag">
+                                    SP SHOTS &amp; SP SKILLS
+                                </p>
+                                <h3 data-i18n="features.special.title">
+                                    必殺技で流れをひっくり返せ！
+                                </h3>
+                                <p data-i18n="features.special.text">
+                                    ゲージを溜めて「SPショット」と「SPスキル」を発動。キャラクターごとの派手な能力がコートをかき回します。
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="feature-card reveal">
+                            <div class="feature-number">03</div>
+                            <div class="feature-visual feature-action">
+                                <img
+                                    src="assets/screenshots/10_match2_jp.webp"
+                                    data-src-ja="assets/screenshots/10_match2_jp.webp"
+                                    data-src-en="assets/screenshots/10_match2_en.webp"
+                                    alt="ゲームプレイ"
+                                    data-alt-ja="ゲームプレイ"
+                                    data-alt-en="Fast-paced gameplay"
+                                    loading="lazy"
+                                />
+                            </div>
+                            <div class="feature-content">
+                                <p class="feature-tag">FAST-PACED ACTION</p>
+                                <h3 data-i18n="features.action.title">
+                                    多彩なショット × スピード勝負
+                                </h3>
+                                <p data-i18n="features.action.text">
+                                    ロブ、クリア、ドロップ、ドライブ、スマッシュを使い分ける爽快ラリー。CPU戦も、1台のPCでの2人対戦も楽しめます。
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section-trailer" id="trailer">
+                <div class="section-inner narrow">
+                    <div class="section-heading light reveal">
+                        <p class="section-kicker">WATCH THE TRAILER</p>
+                        <h2 data-i18n="trailer.title">
+                            まずは60秒、コートをのぞいてみよう。
+                        </h2>
+                    </div>
+                    <div class="trailer-shell reveal" id="trailer-shell">
+                        <div
+                            class="trailer-placeholder"
+                            id="trailer-placeholder"
+                        >
+                            <div class="play-disc" aria-hidden="true">▶</div>
+                            <img
+                                src="assets/screenshots/03_spshot1_2_jp.webp"
+                                data-src-ja="assets/screenshots/03_spshot1_2_jp.webp"
+                                data-src-en="assets/screenshots/03_spshot1_2_en.webp"
+                                alt="Trailer preview"
+                                loading="lazy"
+                            />
+                            <div class="trailer-placeholder-copy">
+                                <strong data-i18n="trailer.pendingTitle"
+                                    >TRAILER COMING SOON</strong
+                                >
+                                <span data-i18n="trailer.pendingText"
+                                    >YouTube公開後、ここに動画が表示されます。</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section-characters" id="characters">
+                <div class="section-inner">
+                    <div class="section-heading reveal">
+                        <p class="section-kicker">CHARACTERS</p>
+                        <h2 data-i18n="characters.title">
+                            バドミントン部、ひとりもいません。
+                        </h2>
+                        <p data-i18n="characters.lead">
+                            それでも全員、本気で勝ちに来る。
+                        </p>
+                    </div>
+
+                    <div class="character-grid" aria-label="Characters">
+                        <article class="character-card character-homeclub reveal">
+                            <img
+                                src="assets/characters/homeclub.webp"
+                                alt="帰宅部"
+                                loading="lazy"
+                            />
+                            <div>
+                                <span>GO-HOME CLUB</span
+                                ><strong data-i18n="characters.homeclub"
+                                    >帰宅部</strong
+                                >
+                            </div>
+                        </article>
+                        <article class="character-card character-athletics reveal">
+                            <img
+                                src="assets/characters/athletics.webp"
+                                alt="陸上部"
+                                loading="lazy"
+                            />
+                            <div>
+                                <span>ATHLETICS CLUB</span
+                                ><strong data-i18n="characters.athletics"
+                                    >陸上部</strong
+                                >
+                            </div>
+                        </article>
+                        <article class="character-card character-karate reveal">
+                            <img
+                                src="assets/characters/karate.webp"
+                                alt="空手部"
+                                loading="lazy"
+                            />
+                            <div>
+                                <span>KARATE CLUB</span
+                                ><strong data-i18n="characters.karate"
+                                    >空手部</strong
+                                >
+                            </div>
+                        </article>
+                        <article class="character-card character-rhythmic reveal">
+                            <img
+                                src="assets/characters/rhythmic.webp"
+                                alt="新体操部"
+                                loading="lazy"
+                            />
+                            <div>
+                                <span>RHYTHMIC CLUB</span
+                                ><strong data-i18n="characters.rhythmic"
+                                    >新体操部</strong
+                                >
+                            </div>
+                        </article>
+                        <article class="character-card character-art reveal">
+                            <img
+                                src="assets/characters/art.webp"
+                                alt="美術部"
+                                loading="lazy"
+                            />
+                            <div>
+                                <span>ART CLUB</span
+                                ><strong data-i18n="characters.art"
+                                    >美術部</strong
+                                >
+                            </div>
+                        </article>
+                        <article class="character-card character-kyudo reveal">
+                            <img
+                                src="assets/characters/kyudo.webp"
+                                alt="弓道部"
+                                loading="lazy"
+                            />
+                            <div>
+                                <span>KYUDO CLUB</span
+                                ><strong data-i18n="characters.kyudo"
+                                    >弓道部</strong
+                                >
+                            </div>
+                        </article>
+                        <article class="character-card character-cooking reveal">
+                            <img
+                                src="assets/characters/cooking.webp"
+                                alt="調理部"
+                                loading="lazy"
+                            />
+                            <div>
+                                <span>COOKING CLUB</span
+                                ><strong data-i18n="characters.cooking"
+                                    >調理部</strong
+                                >
+                            </div>
+                        </article>
+                        <article class="character-card character-sewing reveal">
+                            <img
+                                src="assets/characters/sewing.webp"
+                                alt="手芸部"
+                                loading="lazy"
+                            />
+                            <div>
+                                <span>SEWING CLUB</span
+                                ><strong data-i18n="characters.sewing"
+                                    >手芸部</strong
+                                >
+                            </div>
+                        </article>
+                        <article class="character-card character-occult reveal">
+                            <img
+                                src="assets/characters/occult.webp"
+                                alt="オカルト研究部"
+                                loading="lazy"
+                            />
+                            <div>
+                                <span>OCCULT CLUB</span
+                                ><strong data-i18n="characters.occult"
+                                    >オカルト研究部</strong
+                                >
+                            </div>
+                        </article>
+                        <article class="character-card character-president reveal">
+                            <img
+                                src="assets/characters/president.webp"
+                                alt="生徒会長"
+                                loading="lazy"
+                            />
+                            <div>
+                                <span>STUDENT COUNCIL</span
+                                ><strong data-i18n="characters.president"
+                                    >生徒会長</strong
+                                >
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section-screenshots" id="screenshots">
+                <div class="section-inner">
+                    <div class="section-heading light reveal">
+                        <p class="section-kicker">SCREENSHOTS</p>
+                        <h2 data-i18n="screenshots.title">
+                            コートは今日も大騒ぎ。
+                        </h2>
+                    </div>
+                    <div class="screenshot-grid" id="screenshot-grid"></div>
+                    <p class="gallery-hint" data-i18n="screenshots.hint">
+                        画像をクリックすると拡大できます。
+                    </p>
+                </div>
+            </section>
+
+            <section class="section section-info" id="info">
+                <div class="section-inner info-layout">
+                    <div class="info-intro reveal">
+                        <p class="section-kicker">GAME INFO</p>
+                        <h2 data-i18n="info.title">ゲーム情報</h2>
+                        <p data-i18n="info.lead">
+                            PC (Windows) /
+                            Steam向けに、2026年第4四半期発売予定。
+                        </p>
+                        <div class="mini-logo-wrap">
+                            <img
+                                src="assets/logo/logo_ja.webp"
+                                data-src-ja="assets/logo/logo_ja.webp"
+                                data-src-en="assets/logo/logo_en.webp"
+                                alt="学園バドる！"
+                                data-alt-ja="学園バドる！"
+                                data-alt-en="Shuttle Hearts - Academy Smash"
+                                loading="lazy"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="info-card reveal">
+                        <dl>
+                            <div>
+                                <dt data-i18n="info.titleLabel">タイトル</dt>
+                                <dd data-i18n="info.gameTitle">学園バドる！</dd>
+                            </div>
+                            <div>
+                                <dt data-i18n="info.developerLabel">
+                                    開発・販売
+                                </dt>
+                                <dd data-i18n="info.developer">
+                                    のだるきGames
+                                </dd>
+                            </div>
+                            <div>
+                                <dt data-i18n="info.genreLabel">ジャンル</dt>
+                                <dd data-i18n="info.genre">
+                                    2Dアーケードライク・バドミントンゲーム
+                                </dd>
+                            </div>
+                            <div>
+                                <dt data-i18n="info.platformLabel">
+                                    プラットフォーム
+                                </dt>
+                                <dd>PC (Windows) / Steam</dd>
+                            </div>
+                            <div>
+                                <dt data-i18n="info.releaseLabel">発売予定</dt>
+                                <dd data-i18n="info.release">
+                                    2026年第4四半期
+                                </dd>
+                            </div>
+                            <div>
+                                <dt data-i18n="info.playersLabel">
+                                    プレイ人数
+                                </dt>
+                                <dd data-i18n="info.players">1～2人</dd>
+                            </div>
+                            <div>
+                                <dt data-i18n="info.modesLabel">
+                                    ゲームモード
+                                </dt>
+                                <dd data-i18n="info.modes">
+                                    ストーリー / CPU対戦 / 2人ローカル対戦
+                                </dd>
+                            </div>
+                            <div>
+                                <dt data-i18n="info.languagesLabel">
+                                    対応言語
+                                </dt>
+                                <dd data-i18n="info.languages">
+                                    日本語 / English
+                                </dd>
+                            </div>
+                        </dl>
+
+                        <details class="ai-disclosure">
+                            <summary data-i18n="ai.title">
+                                生成AIの使用について
+                            </summary>
+                            <div class="details-body">
+                                <p data-i18n="ai.p1">
+                                    本作では、一部のグラフィック、テキスト、および英語ローカリゼーションの制作に生成AIを使用しています。生成されたコンテンツは開発者による確認・編集を行った上で使用しています。
+                                </p>
+                                <p data-i18n="ai.p2">
+                                    ゲームプレイ中に生成AIによるコンテンツ生成は行われません。
+                                </p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section-press" id="press">
+                <div class="section-inner press-grid">
+                    <article class="press-card reveal">
+                        <p class="section-kicker">PRESS KIT</p>
+                        <h2 data-i18n="press.title">プレス・配信者向け素材</h2>
+                        <p data-i18n="press.text">
+                            日英ロゴ、スクリーンショット、キーアート、10キャラクターの立ち絵、ゲーム情報をまとめています。
+                        </p>
+                        <a
+                            class="button button-primary config-link"
+                            data-config-link="pressKitUrl"
+                            href="#"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <span aria-hidden="true">↓</span
+                            ><span data-i18n="press.button"
+                                >Download Press Kit</span
+                            >
+                        </a>
+                        <p
+                            class="config-note press-note"
+                            data-i18n="press.pending"
+                        >
+                            Press Kitの公開URLは準備中です
+                        </p>
+                    </article>
+
+                    <article class="contact-card reveal" id="contact">
+                        <p class="section-kicker">CONTACT</p>
+                        <h2 data-i18n="contact.title">
+                            お問い合わせ・公式リンク
+                        </h2>
+                        <p data-i18n="contact.text">
+                            プレス・配信・ビジネスに関するお問い合わせはこちら。
+                        </p>
+                        <div class="contact-links" id="contact-links"></div>
+                        <p
+                            class="config-note contact-note"
+                            data-i18n="contact.pending"
+                        >
+                            連絡先・SNSは公開準備中です。
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="final-cta">
+                <div class="final-cta-inner reveal">
+                    <img
+                        src="assets/logo/logo_ja.webp"
+                        data-src-ja="assets/logo/logo_ja.webp"
+                        data-src-en="assets/logo/logo_en.webp"
+                        alt="学園バドる！"
+                        data-alt-ja="学園バドる！"
+                        data-alt-en="Shuttle Hearts - Academy Smash"
+                        loading="lazy"
+                    />
+                    <p data-i18n="final.copy">次のラリーは、あなたの番。</p>
+                    <a
+                        class="button button-primary config-link"
+                        data-config-link="steamUrl"
+                        href="#"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <span aria-hidden="true">♡</span
+                        ><span data-i18n="cta.wishlist"
+                            >Steamでウィッシュリスト</span
+                        >
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-inner">
+                <div>
+                    <strong data-i18n="brand.name">のだるきGames</strong
+                    ><span>© 2026 NodarukiGames</span>
+                </div>
+                <a href="#top" data-i18n="footer.top">ページ上部へ ↑</a>
+            </div>
+        </footer>
+
+        <dialog class="lightbox" id="lightbox" aria-label="Screenshot viewer">
+            <button class="lightbox-close" type="button" aria-label="Close">
+                ×
+            </button>
+            <button
+                class="lightbox-nav lightbox-prev"
+                type="button"
+                aria-label="Previous"
+            >
+                ‹
+            </button>
+            <figure>
+                <img id="lightbox-image" src="" alt="" />
+                <figcaption id="lightbox-caption"></figcaption>
+            </figure>
+            <button
+                class="lightbox-nav lightbox-next"
+                type="button"
+                aria-label="Next"
+            >
+                ›
+            </button>
+            <div class="lightbox-count" id="lightbox-count"></div>
+        </dialog>
+    </body>
+</html>
