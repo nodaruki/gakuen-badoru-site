@@ -144,13 +144,14 @@ const TRANSLATIONS = {
     "features.title": "Badminton gets a little out of hand.",
     "features.lead":
       "Easy to pick up, with a playstyle that changes dramatically from character to character.",
-    "features.characters.title": "A colorful cast of club girls",
+    "features.characters.title":
+      "A colorful cast from all kinds of school clubs",
     "features.characters.text":
-      "Go-Home Club, Athletics, Art, Karate, and more. Every character brings a club-inspired ability to a very unconventional badminton match.",
+      "From the Go-Home Club to Athletics, Art, Karate, and more, every character brings a club-inspired ability to the court.",
     "features.special.title": "Turn the rally around with special moves",
     "features.special.text":
       "Build your gauge and unleash SP Shots and SP Skills. Each character has flashy powers that can turn the whole court upside down.",
-    "features.action.title": "A full shot set at arcade speed",
+    "features.action.title": "A full range of shots at arcade speed",
     "features.action.text":
       "Mix lobs, clears, drops, drives, and smashes in fast rallies. Play against the CPU or challenge a friend in local two-player matches on one PC.",
     "trailer.title": "Take a 60-second look at the chaos.",
@@ -180,12 +181,12 @@ const TRANSLATIONS = {
     "info.genreLabel": "Genre",
     "info.genre": "2D Arcade-Style Badminton",
     "info.platformLabel": "Platform",
-    "info.releaseLabel": "Planned Release",
+    "info.releaseLabel": "Release Window",
     "info.release": "Q4 2026",
     "info.playersLabel": "Players",
     "info.players": "1–2 Players",
     "info.modesLabel": "Game Modes",
-    "info.modes": "Story / vs. CPU / 2-Player Local Multiplayer",
+    "info.modes": "Story Mode / Vs. CPU / 2-Player Local Multiplayer",
     "info.languagesLabel": "Languages",
     "info.languages": "Japanese / English",
     "ai.title": "Generative AI Disclosure",
