@@ -9,10 +9,11 @@
 const SITE_CONFIG = {
   steamUrl: "https://store.steampowered.com/app/4988110/",
   trailerUrl: "https://youtu.be/3sfgQPUJGhI", // YouTube: https://www.youtube.com/watch?v=... / https://youtu.be/...
-  pressKitUrl: "", // GitHub Releases の ZIP 直リンクを推奨
+  pressKitUrl:
+    "https://github.com/nodaruki/gakuen-badoru-site/releases/latest/download/gakuen-badoru_presskit.zip", // GitHub Releases の ZIP 直リンクを推奨
   contactEmail: "nodarukigames@gmail.com",
   xUrl: "https://x.com/nodarukigames",
-  youtubeUrl: "",
+  youtubeUrl: "https://www.youtube.com/@nodarukigames",
 };
 
 const TRANSLATIONS = {
