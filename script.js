@@ -8,7 +8,8 @@
    ========================================================= */
 const SITE_CONFIG = {
   steamUrl: "https://store.steampowered.com/app/4988110/",
-  trailerUrl: "https://youtu.be/3sfgQPUJGhI", // YouTube: https://www.youtube.com/watch?v=... / https://youtu.be/...
+  trailerUrlJa: "https://youtu.be/3sfgQPUJGhI", // YouTube: https://www.youtube.com/watch?v=... / https://youtu.be/...
+  trailerUrlEn: "https://youtu.be/klIk_1jrPnc", // YouTube: https://www.youtube.com/watch?v=... / https://youtu.be/...
   pressKitUrl:
     "https://github.com/nodaruki/gakuen-badoru-site/releases/latest/download/gakuen-badoru_presskit.zip", // GitHub Releases の ZIP 直リンクを推奨
   contactEmail: "nodarukigames@gmail.com",
@@ -395,10 +396,28 @@ function youtubeEmbedUrl(url) {
 }
 
 function setupTrailer() {
-  const embed = youtubeEmbedUrl(SITE_CONFIG.trailerUrl);
-  if (!embed) return;
+  const trailerUrl =
+    currentLang === "ja" ? SITE_CONFIG.trailerUrlJa : SITE_CONFIG.trailerUrlEn;
+
+  const embed = youtubeEmbedUrl(trailerUrl);
   const shell = document.getElementById("trailer-shell");
-  shell.innerHTML = `<iframe src="${embed}" title="Shuttle Hearts - Academy Smash Trailer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
+
+  if (!shell || !embed) return;
+
+  const title =
+    currentLang === "ja"
+      ? "『学園バドる！』ゲーム紹介トレーラー"
+      : "Shuttle Hearts - Academy Smash Trailer";
+
+  shell.innerHTML = `
+    <iframe
+      src="${embed}"
+      title="${title}"
+      loading="lazy"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+  `;
 }
 
 function refreshTrailerPlaceholderLanguage() {
