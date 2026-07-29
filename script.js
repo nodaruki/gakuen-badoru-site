@@ -10,8 +10,10 @@ const SITE_CONFIG = {
   steamUrl: "https://store.steampowered.com/app/4988110/",
   trailerUrlJa: "https://youtu.be/3sfgQPUJGhI", // YouTube: https://www.youtube.com/watch?v=... / https://youtu.be/...
   trailerUrlEn: "https://youtu.be/klIk_1jrPnc", // YouTube: https://www.youtube.com/watch?v=... / https://youtu.be/...
-  pressKitUrl:
-    "https://github.com/nodaruki/gakuen-badoru-site/releases/latest/download/gakuen-badoru_presskit.zip", // GitHub Releases の ZIP 直リンクを推奨
+  pressKitUrlJa:
+    "https://github.com/nodaruki/gakuen-badoru-site/releases/latest/download/gakuen-badoru_presskit_ja.zip", // GitHub Releases の ZIP 直リンクを推奨
+  pressKitUrlEn:
+    "https://github.com/nodaruki/gakuen-badoru-site/releases/latest/download/shuttle-hearts_presskit_en.zip", // GitHub Releases の ZIP 直リンクを推奨
   contactEmail: "nodarukigames@gmail.com",
   xUrl: "https://x.com/nodarukigames",
   youtubeUrl: "https://www.youtube.com/@nodarukigames",
@@ -100,7 +102,7 @@ const TRANSLATIONS = {
     "ai.p2": "ゲームプレイ中に生成AIによるコンテンツ生成は行われません。",
     "press.title": "プレス・配信者向け素材",
     "press.text":
-      "日英ロゴ、スクリーンショット、キーアート、10キャラクターの立ち絵、ゲーム情報をまとめています。",
+      "日本語ロゴ、スクリーンショット、キーアート、10キャラクターの立ち絵、ゲーム情報をまとめています。",
     "press.button": "Download Press Kit",
     "press.pending": "Press Kitの公開URLは準備中です",
     "contact.title": "お問い合わせ・公式リンク",
@@ -196,7 +198,7 @@ const TRANSLATIONS = {
     "ai.p2": "No generative AI content is created during gameplay.",
     "press.title": "Press & Creator Assets",
     "press.text":
-      "Includes Japanese and English logos, screenshots, key art, artwork for 10 characters, and bilingual game information.",
+      "Includes the English logo, screenshots, key art, artwork for 10 characters, and game information.",
     "press.button": "Download Press Kit",
     "press.pending": "The Press Kit download URL is coming soon.",
     "contact.title": "Contact & Official Links",
@@ -290,6 +292,8 @@ function translate(lang) {
       `assets/keyart/main_${lang === "ja" ? "jp" : "en"}.webp`,
     );
 
+  applyConfigLinks();
+  setupTrailer();
   renderScreenshots();
   renderContactLinks();
   refreshTrailerPlaceholderLanguage();
@@ -346,19 +350,31 @@ function closeLightbox() {
   else dialog.removeAttribute("open");
 }
 
+function getConfigLinkUrl(key) {
+  if (key === "pressKitUrl") {
+    return currentLang === "ja"
+      ? SITE_CONFIG.pressKitUrlJa
+      : SITE_CONFIG.pressKitUrlEn;
+  }
+
+  return SITE_CONFIG[key];
+}
+
 function applyConfigLinks() {
   document.querySelectorAll("[data-config-link]").forEach((link) => {
     const key = link.dataset.configLink;
-    const url = SITE_CONFIG[key];
+    const url = getConfigLinkUrl(key);
+
     if (url) {
       link.href = url;
       link.classList.remove("is-unavailable");
       link.removeAttribute("aria-disabled");
+      link.onclick = null;
     } else {
       link.href = "#";
       link.classList.add("is-unavailable");
       link.setAttribute("aria-disabled", "true");
-      link.addEventListener("click", (event) => event.preventDefault());
+      link.onclick = (event) => event.preventDefault();
     }
   });
 
@@ -367,10 +383,16 @@ function applyConfigLinks() {
     .forEach((note) =>
       note.classList.toggle("is-hidden", Boolean(SITE_CONFIG.steamUrl)),
     );
+
+  const pressKitUrl =
+    currentLang === "ja"
+      ? SITE_CONFIG.pressKitUrlJa
+      : SITE_CONFIG.pressKitUrlEn;
+
   document
     .querySelectorAll(".press-note")
     .forEach((note) =>
-      note.classList.toggle("is-hidden", Boolean(SITE_CONFIG.pressKitUrl)),
+      note.classList.toggle("is-hidden", Boolean(pressKitUrl)),
     );
 }
 
@@ -545,12 +567,12 @@ function escapeHtml(value) {
 }
 
 function init() {
-  applyConfigLinks();
-  setupTrailer();
   translate(getInitialLanguage());
+
   document.querySelectorAll("[data-lang]").forEach((button) => {
     button.addEventListener("click", () => translate(button.dataset.lang));
   });
+
   setupMenu();
   setupGallery();
   setupRevealAnimations();
