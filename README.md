@@ -1,63 +1,31 @@
 # 学園バドる！ 公式サイト
 
-GitHub Pages向けの静的1ページサイトです。ビルド作業は不要です。
+PC向け対戦バドミントンゲーム
+**『学園バドる！』の公式サイト**です。
 
-## 公開方法
+## Official Website
 
-このフォルダの内容をGitHubリポジトリへ置き、GitHub Pagesを有効化してください。
+https://nodaruki.github.io/gakuen-badoru-site/
 
-- `index.html`
-- `style.css`
-- `script.js`
-- `assets/`
+## Steam
 
-## URLの設定
+https://store.steampowered.com/app/4988110/
 
-`script.js` 冒頭の `SITE_CONFIG` だけ編集します。
+## About the Game
 
-```js
-const SITE_CONFIG = {
-  steamUrl: "https://store.steampowered.com/app/xxxxx/",
-  trailerUrl: "https://www.youtube.com/watch?v=xxxxx",
-  pressKitUrl: "https://github.com/.../releases/download/.../gakuen-badoru_presskit_20260724.zip",
-  contactEmail: "press@example.com",
-  xUrl: "https://x.com/...",
-  youtubeUrl: "https://www.youtube.com/@...",
-};
-```
+個性豊かな女子生徒たちが、部活や特技をモチーフにした必殺技で戦う、ハチャメチャな対戦バドミントンゲームです。
 
-空文字の項目は「準備中」として表示されます。
+* 対応プラットフォーム：PC（Windows） / Steam
+* プレイ人数：1～2人
+* 対応言語：日本語 / English
+* 発売予定：2026年第4四半期
 
-## 日本語 / English
+## Developer
 
-1枚のHTMLで切り替えています。
+のだるきGames / NodarukiGames
 
-- ブラウザ言語を初期値として使用
-- ユーザーが選んだ言語を `localStorage` に保存
-- `?lang=ja` と `?lang=en` に対応
-- HERO、ロゴ、スクリーンショットも言語に合わせて自動切替
+## Copyright
 
-例:
+© 2026 NodarukiGames
 
-- `https://USERNAME.github.io/REPOSITORY/?lang=ja`
-- `https://USERNAME.github.io/REPOSITORY/?lang=en`
-
-## 画像
-
-Press KitのPNGは変更せず、Webサイト用には軽量なWebPを別途生成しています。
-Press Kit本体はGitHub Releases等へ置く想定です。
-
-## Trailer
-
-`trailerUrl` にYouTube URLを設定すると、プレースホルダーが自動的にYouTube埋め込みへ切り替わります。
-
-対応例:
-
-- `https://www.youtube.com/watch?v=VIDEO_ID`
-- `https://youtu.be/VIDEO_ID`
-- YouTube Shorts URL
-
-## Press Kit
-
-Press Kit ZIPはこのサイトフォルダには含めていません。
-`pressKitUrl` にGitHub Releases上のZIPへのリンクを設定してください。
+このリポジトリに含まれる画像、ロゴ、キャラクター、文章などのコンテンツについて、権利者の許可なく再配布・再販売することを禁止します。
