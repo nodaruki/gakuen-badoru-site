@@ -7,7 +7,7 @@
    空文字の項目はサイト上で「準備中」扱いになります。
    ========================================================= */
 const SITE_CONFIG = {
-  steamUrl: "https://store.steampowered.com/app/4988110/",
+  steamUrl: "",
   trailerUrlJa: "https://youtu.be/3sfgQPUJGhI", // YouTube: https://www.youtube.com/watch?v=... / https://youtu.be/...
   trailerUrlEn: "https://youtu.be/klIk_1jrPnc", // YouTube: https://www.youtube.com/watch?v=... / https://youtu.be/...
   pressKitUrlJa:
@@ -34,7 +34,7 @@ const TRANSLATIONS = {
     "cta.wishlistShort": "ウィッシュリスト",
     "cta.wishlist": "Steamでウィッシュリスト",
     "cta.trailer": "Trailerを見る",
-    "cta.steamPending": "Steamストアページは準備中です",
+    "cta.steamPending": "Steamストアページは8月10日公開予定です",
     "hero.line1": "必殺技が飛び交う、",
     "hero.line2": "ハチャメチャ学園バドミントン！",
     "hero.lead":
@@ -128,7 +128,8 @@ const TRANSLATIONS = {
     "cta.wishlistShort": "Wishlist",
     "cta.wishlist": "Wishlist on Steam",
     "cta.trailer": "Watch Trailer",
-    "cta.steamPending": "The Steam store page is coming soon.",
+    "cta.steamPending":
+      "The Steam store page is scheduled to open on August 10.",
     "hero.line1": "Special moves fly across the court",
     "hero.line2": "in this wild school badminton showdown!",
     "hero.lead":
