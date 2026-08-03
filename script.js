@@ -44,11 +44,11 @@ const TRANSLATIONS = {
     "quick.players": "プレイ人数",
     "about.title": "バドミントン部じゃない！？<br>部活少女たちの本気バトル！",
     "about.p1":
-      "『学園バドる！』は、帰宅部、陸上部、空手部、美術部、調理部、オカ研部など、個性豊かな少女たちが戦う2Dアーケードライク・バドミントンゲーム。",
+      "『学園バドる！』は、帰宅部、陸上部、空手部、美術部、調理部、オカ研部など、個性豊かな少女たちが戦う2Dバドミントン対戦ゲーム。",
     "about.p2":
       "ロブ、クリア、ドロップ、ドライブ、スマッシュを使い分けてラリーを制し、ゲージが溜まったらキャラクター固有の「SPショット」と「SPスキル」を発動！",
     "about.p3":
-      "90年代アーケードゲームを意識した、テンポの良いスピーディーなゲームプレイを楽しめます。",
+      "ルールを覚えてすぐに遊べる分かりやすさと、テンポの良い試合展開を重視した、アーケードゲームライクな対戦を楽しめます。",
     "about.caption": "一瞬の判断でラリーを制せ！",
     "features.title": "学園バドる！のここがハチャメチャ",
     "features.lead":
@@ -86,7 +86,7 @@ const TRANSLATIONS = {
     "info.developerLabel": "開発・販売",
     "info.developer": "のだるきGames",
     "info.genreLabel": "ジャンル",
-    "info.genre": "2Dアーケードライク・バドミントンゲーム",
+    "info.genre": "2Dバドミントン対戦ゲーム",
     "info.platformLabel": "プラットフォーム",
     "info.releaseLabel": "発売予定",
     "info.release": "2026年第4四半期",
@@ -142,7 +142,7 @@ const TRANSLATIONS = {
     "about.p2":
       "Control the rally with lobs, clears, drops, drives, and smashes, then unleash character-specific SP Shots and SP Skills when your gauge is ready.",
     "about.p3":
-      "Inspired by the fast-paced feel of '90s arcade games, it combines simple controls with quick rallies, unique abilities, and just the right amount of chaos.",
+      "Easy to pick up and designed for fast-paced matches, it delivers arcade-style badminton action with unique abilities and just the right amount of chaos.",
     "about.caption": "Read the rally. Own the court.",
     "features.title": "Badminton gets a little out of hand.",
     "features.lead":
@@ -273,7 +273,7 @@ function translate(lang) {
       : "Shuttle Hearts - Academy Smash | NodarukiGames";
   const description =
     lang === "ja"
-      ? "『学園バドる！』は、個性豊かな部活少女たちが固有能力と必殺技で戦う2Dアーケードライク・バドミントンゲーム。PC (Windows) / Steam、2026年第4四半期発売予定。"
+      ? "『学園バドる！』は、個性豊かな部活少女たちが固有能力と必殺技で戦う2Dバドミントン対戦ゲーム。PC (Windows) / Steam、2026年第4四半期発売予定。"
       : "Shuttle Hearts - Academy Smash is a fast-paced 2D arcade-style badminton game starring girls from all kinds of school clubs. Coming to PC (Windows) on Steam in Q4 2026.";
   document.title = title;
   document
