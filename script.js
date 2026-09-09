@@ -25,16 +25,19 @@ const TRANSLATIONS = {
     "a11y.menu": "メニュー",
     "brand.prefix": "のだるき",
     "brand.name": "のだるきGames",
+    "nav.demo": "体験版",
     "nav.about": "ゲーム紹介",
     "nav.features": "特徴",
     "nav.trailer": "トレーラー",
     "nav.characters": "キャラクター",
     "nav.screenshots": "スクリーンショット",
     "nav.info": "ゲーム情報",
+    "cta.demoShort": "無料体験版",
+    "cta.demo": "Steamで無料体験版をプレイ",
     "cta.wishlistShort": "ウィッシュリスト",
     "cta.wishlist": "Steamでウィッシュリスト",
     "cta.trailer": "Trailerを見る",
-    "cta.steamPending": "Steamストアページは準備中です",
+    "cta.steamPending": "Steamページへのリンクを準備中です",
     "hero.line1": "必殺技が飛び交う、",
     "hero.line2": "ハチャメチャ学園バドミントン！",
     "hero.lead":
@@ -42,6 +45,17 @@ const TRANSLATIONS = {
     "quick.release": "発売予定",
     "quick.releaseValue": "2026年第4四半期",
     "quick.players": "プレイ人数",
+    "demo.title": "Steam無料体験版 配信中！",
+    "demo.lead":
+      "2026年9月9日よりSteamで無料体験版を配信中。製品版に先駆けて、4キャラクターと一部モードを遊べます。",
+    "demo.item.story": "ストーリーモード（一部）",
+    "demo.item.cpu": "対戦モード：vs CPU",
+    "demo.item.local": "対戦モード：ローカル2人対戦",
+    "demo.item.characters": "帰宅部・陸上部・美術部・空手部の4キャラクター",
+    "demo.controls": "キーボード / ゲームパッド対応",
+    "demo.paint.title": "美術部でコートを彩ろう！",
+    "demo.paint.text":
+      "美術部で勝利すると表示される「ペイント率」。高いペイント率を記録した勝利画面を、ハッシュタグを付けてXへ投稿してシェアしよう！",
     "about.title": "バドミントン部じゃない！？<br>部活少女たちの本気バトル！",
     "about.p1":
       "『学園バドる！』は、帰宅部、陸上部、空手部、美術部、調理部、オカ研部など、個性豊かな少女たちが戦う2Dバドミントン対戦ゲーム。",
@@ -80,7 +94,7 @@ const TRANSLATIONS = {
     "screenshots.title": "コートは今日も大騒ぎ。",
     "screenshots.hint": "画像をクリックすると拡大できます。",
     "info.title": "ゲーム情報",
-    "info.lead": "PC (Windows) / Steam向けに、2026年第4四半期発売予定。",
+    "info.lead": "Steam無料体験版配信中。製品版はPC (Windows)向けに2026年第4四半期発売予定。",
     "info.titleLabel": "タイトル",
     "info.gameTitle": "学園バドる！",
     "info.developerLabel": "開発・販売",
@@ -92,6 +106,8 @@ const TRANSLATIONS = {
     "info.release": "2026年第4四半期",
     "info.playersLabel": "プレイ人数",
     "info.players": "1～2人",
+    "info.demoLabel": "体験版",
+    "info.demo": "Steam無料体験版 配信中",
     "info.modesLabel": "ゲームモード",
     "info.modes": "ストーリー / CPU対戦 / 2人ローカル対戦",
     "info.languagesLabel": "対応言語",
@@ -119,16 +135,20 @@ const TRANSLATIONS = {
     "a11y.menu": "Menu",
     "brand.prefix": "Nodaruki",
     "brand.name": "NodarukiGames",
+    "nav.demo": "Demo",
     "nav.about": "About",
     "nav.features": "Features",
     "nav.trailer": "Trailer",
     "nav.characters": "Characters",
     "nav.screenshots": "Screenshots",
     "nav.info": "Game Info",
+    "cta.demoShort": "Free Demo",
+    "cta.demo": "Play the Free Demo on Steam",
     "cta.wishlistShort": "Wishlist",
     "cta.wishlist": "Wishlist on Steam",
     "cta.trailer": "Watch Trailer",
-    "cta.steamPending": "The Steam store page is coming soon.",
+    "cta.steamPending":
+      "The Steam page link is being prepared.",
     "hero.line1": "Special moves fly across the court",
     "hero.line2": "in this wild school badminton showdown!",
     "hero.lead":
@@ -136,6 +156,17 @@ const TRANSLATIONS = {
     "quick.release": "RELEASE",
     "quick.releaseValue": "Q4 2026",
     "quick.players": "PLAYERS",
+    "demo.title": "Free Steam Demo Available Now!",
+    "demo.lead":
+      "The free Steam demo is available from September 9, 2026, featuring four playable characters and a selection of modes ahead of the full release.",
+    "demo.item.story": "Story Mode (partial)",
+    "demo.item.cpu": "Versus Mode: vs CPU",
+    "demo.item.local": "Versus Mode: Local 2-Player",
+    "demo.item.characters": "Go-Home Club, Athletics Club, Art Club, and Karate Club",
+    "demo.controls": "Keyboard / Gamepad supported",
+    "demo.paint.title": "Paint the court with the Art Club!",
+    "demo.paint.text":
+      "Win as the Art Club to see your Paint Rate, then share a screenshot of your most colorful victory screen on X with the challenge hashtag!",
     "about.title": "No badminton club members.<br>Plenty of badminton chaos.",
     "about.p1":
       "Shuttle Hearts - Academy Smash is a 2D arcade-style badminton game featuring a colorful cast of girls from all kinds of school clubs.",
@@ -176,7 +207,7 @@ const TRANSLATIONS = {
     "screenshots.title": "The court is never quiet for long.",
     "screenshots.hint": "Click an image to view it full size.",
     "info.title": "Game Info",
-    "info.lead": "Coming to PC (Windows) on Steam in Q4 2026.",
+    "info.lead": "A free Steam demo is available now. The full game is planned for PC (Windows) in Q4 2026.",
     "info.titleLabel": "Title",
     "info.gameTitle": "Shuttle Hearts - Academy Smash",
     "info.developerLabel": "Developer / Publisher",
@@ -188,6 +219,8 @@ const TRANSLATIONS = {
     "info.release": "Q4 2026",
     "info.playersLabel": "Players",
     "info.players": "1–2 Players",
+    "info.demoLabel": "Demo",
+    "info.demo": "Free Steam demo available now",
     "info.modesLabel": "Game Modes",
     "info.modes": "Story Mode / Vs. CPU / 2-Player Local Multiplayer",
     "info.languagesLabel": "Languages",
@@ -273,8 +306,8 @@ function translate(lang) {
       : "Shuttle Hearts - Academy Smash | NodarukiGames";
   const description =
     lang === "ja"
-      ? "『学園バドる！』は、個性豊かな部活少女たちが固有能力と必殺技で戦う2Dバドミントン対戦ゲーム。PC (Windows) / Steam、2026年第4四半期発売予定。"
-      : "Shuttle Hearts - Academy Smash is a fast-paced 2D arcade-style badminton game starring girls from all kinds of school clubs. Coming to PC (Windows) on Steam in Q4 2026.";
+      ? "『学園バドる！』は、個性豊かな部活少女たちが固有能力と必殺技で戦う2Dバドミントン対戦ゲーム。Steam無料体験版配信中。PC (Windows)、2026年第4四半期発売予定。"
+      : "Shuttle Hearts - Academy Smash is a fast-paced 2D arcade-style badminton game starring girls from all kinds of school clubs. A free demo is available now on Steam, with the full game planned for Q4 2026.";
   document.title = title;
   document
     .querySelector('meta[name="description"]')
@@ -289,7 +322,7 @@ function translate(lang) {
     .querySelector('meta[property="og:image"]')
     .setAttribute(
       "content",
-      `assets/keyart/main_${lang === "ja" ? "jp" : "en"}.webp`,
+      `assets/demo/demo_launch_${lang}.webp`,
     );
 
   applyConfigLinks();
@@ -356,6 +389,7 @@ function getConfigLinkUrl(key) {
       ? SITE_CONFIG.pressKitUrlJa
       : SITE_CONFIG.pressKitUrlEn;
   }
+
 
   return SITE_CONFIG[key];
 }
